@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الاستمارة</title>
+    <link rel="stylesheet" href="css/Formulaire.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+rel="stylesheet">
+</head>
+<body dir="rtl">
+    <header>
+        <nav>
+            <a href="HOME.html"><strong>الصفحة الرأسية</strong></a>
+            <a href="Formulaire.html"><strong>الاستمارة</strong></a>
+            <a href="INFO.html"><strong>المعلومات</strong></a>
+            <a href="systeme.html"><strong>المجموعة الشمسية</strong></a>
+        </nav>
+    </header>
+    <div class="container">
+        <form action="#" method="post">
+            <!-- القسم الأول: معلومات شخصية -->
+            <div class="section">
+                <h2>المعلومات الشخصية</h2>
+                <label for="name">الاسم واللقب:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="phone">اختار السنة الدراسية:</label>
+                <select id="phone" name="year" required>
+                    <option value="1er">السنة الأولى</option>
+                    <option value="2eme">السنة الثانية</option>
+                    <option value="terminal">السنة النهائية</option>
+                </select>
+
+                <label for="email">اختر القسم:</label>
+                <div>
+                    <input type="checkbox" id="info" name="department" value="info">
+                    <label for="info">قسم المعلوماتية</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="mecanique" name="department" value="mecanique">
+                    <label for="mecanique">قسم الميكانيك</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="electrique" name="department" value="electrique">
+                    <label for="electrique">قسم الكهرباء</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="genie-civil" name="department" value="genie-civil">
+                    <label for="genie-civil">قسم الهندسة المدنية</label>
+                </div>
+            </div>
+
+            <!-- القسم الثاني: معلومات كوكب نبتون -->
+            <div class="section">
+                <h2>معلومات كوكب نبتون</h2>
+                <label for="discovery">عام اكتشاف نبتون:</label>
+                <input type="number" id="discovery" name="discovery" required>
+
+                <label for="distance">المسافة من الشمس (بالمليون كم):</label>
+                <input type="number" id="distance" name="distance" required>
+
+                <label for="moons">عدد أقمار نبتون:</label>
+                <input type="number" id="moons" name="moons" required>
+            </div>
+
+            <!-- القسم الثالث: Quiz -->
+            <div class="section quiz">
+                <h2>اختبار كوكب نبتون</h2>
+                <label>ما هو اللون المميز لكوكب نبتون؟</label>
+                <div>
+                    <input type="checkbox" id="blue" name="color" value="blue">
+                    <label for="blue">أزرق</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="green" name="color" value="green">
+                    <label for="green">أخضر</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="red" name="color" value="red">
+                    <label for="red">أحمر</label>
+                </div>
+
+                <label>هل يحتوي كوكب نبتون على حلقات؟</label>
+                <div>
+                    <input type="checkbox" id="rings-yes" name="rings" value="yes">
+                    <label for="rings-yes">نعم</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="rings-no" name="rings" value="no">
+                    <label for="rings-no">لا</label>
+                </div>
+
+                <label>ما هو اكتشاف كوكب نبتون؟</label>
+                <div>
+                    <input type="checkbox" id="discovered-telescope" name="discovered-by" value="telescope">
+                    <label for="discovered-telescope">من خلال التلسكوب</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="discovered-spacecraft" name="discovered-by" value="spacecraft">
+                    <label for="discovered-spacecraft">من خلال المركبات الفضائية</label>
+                </div>
+            </div>
+
+            <button type="submit">إرسال</button>
+        </form>
+    </div>
+    
+</body>
+</html>
+    
+    
